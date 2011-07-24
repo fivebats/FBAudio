@@ -4,7 +4,7 @@ This was created as part of the "Rock and Run" project from [iOSDevCamp11](http:
 
 We needed code to play songs from the user's iTunes library while making changes to the song tempo to match the runner's pace.
 
-iOSDevCamp takes place over a weekend, so the point is to create an interesting application and demonstrate it very quickly. In that spirit this code is very alpha and not tested very well!
+iOSDevCamp takes place over a weekend, so the point is to create an interesting application and demonstrate it very quickly. In that spirit this code is very alpha and not tested very well. Feel free to improve it!
 
 ## What is Here
 
@@ -27,7 +27,9 @@ There are a few different players. From lowest to highest level they are:
 
 ## How to Use
 
-See the code from FBAudioLibTester. Basically just instantiate a FBSoundTouchAVAssetPlayer and give it a URL pointing to the AVAsset to play. You may adjust the tempo by writing to the tempo property of the player.
+Copy the contents of the FBAudioLib folder into your project.
+
+Then see the code from FBAudioLibTester. Basically just instantiate a FBSoundTouchAVAssetPlayer and give it a URL pointing to the AVAsset to play. You may adjust the tempo by writing to the tempo property of the player.
 
 ## WARNING
 
