@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C10964713D8DD1500BED9B6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10964613D8DD1500BED9B6 /* AudioToolbox.framework */; };
+		4C10964B13D903BB00BED9B6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10964A13D903BB00BED9B6 /* CoreMedia.framework */; };
+		4C10964D13D903C600BED9B6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10964C13D903C600BED9B6 /* MediaPlayer.framework */; };
+		4C24257213D7F59D0090C07A /* FBAudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24257113D7F59D0090C07A /* FBAudioQueuePlayer.m */; };
+		4C24257313D7F59D0090C07A /* FBAudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24257113D7F59D0090C07A /* FBAudioQueuePlayer.m */; };
+		4C24257913D801E80090C07A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C24257813D801E80090C07A /* AVFoundation.framework */; };
+		4C355CD213DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C355CD113DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm */; };
+		4C355CD313DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C355CD113DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm */; };
+		4C60992313DBECE1008C18B4 /* SoundTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C60992213DBECE1008C18B4 /* SoundTouch.framework */; };
+		4C686D4C13DB8D5100C565AF /* FBAVAssetPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C686D4B13DB8D5100C565AF /* FBAVAssetPlayer.m */; };
+		4C686D4D13DB8D5100C565AF /* FBAVAssetPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C686D4B13DB8D5100C565AF /* FBAVAssetPlayer.m */; };
+		4CB3BDDF13D7B55C0072063E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDDE13D7B55C0072063E /* UIKit.framework */; };
+		4CB3BDE113D7B55C0072063E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDE013D7B55C0072063E /* Foundation.framework */; };
+		4CB3BDE313D7B55C0072063E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDE213D7B55C0072063E /* CoreGraphics.framework */; };
+		4CB3BDE913D7B55C0072063E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3BDE713D7B55C0072063E /* InfoPlist.strings */; };
+		4CB3BDEB13D7B55C0072063E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3BDEA13D7B55C0072063E /* main.m */; };
+		4CB3BDEF13D7B55C0072063E /* FBAudioLibTesterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3BDEE13D7B55C0072063E /* FBAudioLibTesterAppDelegate.m */; };
+		4CB3BDF213D7B55C0072063E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3BDF013D7B55C0072063E /* MainWindow.xib */; };
+		4CB3BDF513D7B55C0072063E /* FBAudioLibTesterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3BDF413D7B55C0072063E /* FBAudioLibTesterViewController.m */; };
+		4CB3BDF813D7B55C0072063E /* FBAudioLibTesterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3BDF613D7B55C0072063E /* FBAudioLibTesterViewController.xib */; };
+		4CB3BE0013D7B55C0072063E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDFF13D7B55C0072063E /* SenTestingKit.framework */; };
+		4CB3BE0113D7B55C0072063E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDDE13D7B55C0072063E /* UIKit.framework */; };
+		4CB3BE0213D7B55C0072063E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDE013D7B55C0072063E /* Foundation.framework */; };
+		4CB3BE0313D7B55C0072063E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3BDE213D7B55C0072063E /* CoreGraphics.framework */; };
+		4CB3BE0B13D7B55C0072063E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3BE0913D7B55C0072063E /* InfoPlist.strings */; };
+		4CB3BE0D13D7B55C0072063E /* FBAudioLibTesterTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3BE0C13D7B55C0072063E /* FBAudioLibTesterTests.h */; };
+		4CB3BE0F13D7B55C0072063E /* FBAudioLibTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3BE0E13D7B55C0072063E /* FBAudioLibTesterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CB3BE0413D7B55C0072063E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CB3BDD113D7B55C0072063E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB3BDD913D7B55C0072063E;
+			remoteInfo = FBAudioLibTester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C10964613D8DD1500BED9B6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4C10964913D8F9F100BED9B6 /* FBDebugSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBDebugSupport.h; path = ../../FBAudioLib/FBDebugSupport.h; sourceTree = "<group>"; };
+		4C10964A13D903BB00BED9B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4C10964C13D903C600BED9B6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4C24257013D7F59D0090C07A /* FBAudioQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBAudioQueuePlayer.h; path = ../../FBAudioLib/FBAudioQueuePlayer.h; sourceTree = "<group>"; };
+		4C24257113D7F59D0090C07A /* FBAudioQueuePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBAudioQueuePlayer.m; path = ../../FBAudioLib/FBAudioQueuePlayer.m; sourceTree = "<group>"; };
+		4C24257813D801E80090C07A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C24257A13D80B750090C07A /* FBAudioLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBAudioLib.h; path = ../../FBAudioLib/FBAudioLib.h; sourceTree = "<group>"; };
+		4C355CD013DBE3F600715991 /* FBSoundTouchAVAssetPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBSoundTouchAVAssetPlayer.h; path = ../../FBAudioLib/FBSoundTouchAVAssetPlayer.h; sourceTree = "<group>"; };
+		4C355CD113DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FBSoundTouchAVAssetPlayer.mm; path = ../../FBAudioLib/FBSoundTouchAVAssetPlayer.mm; sourceTree = "<group>"; };
+		4C60992213DBECE1008C18B4 /* SoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SoundTouch.framework; path = ../FBAudioLib/SoundTouch.framework; sourceTree = "<group>"; };
+		4C686D4A13DB8D5100C565AF /* FBAVAssetPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBAVAssetPlayer.h; path = ../../FBAudioLib/FBAVAssetPlayer.h; sourceTree = "<group>"; };
+		4C686D4B13DB8D5100C565AF /* FBAVAssetPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBAVAssetPlayer.m; path = ../../FBAudioLib/FBAVAssetPlayer.m; sourceTree = "<group>"; };
+		4CB3BDDA13D7B55C0072063E /* FBAudioLibTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBAudioLibTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB3BDDE13D7B55C0072063E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CB3BDE013D7B55C0072063E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CB3BDE213D7B55C0072063E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CB3BDE613D7B55C0072063E /* FBAudioLibTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBAudioLibTester-Info.plist"; sourceTree = "<group>"; };
+		4CB3BDE813D7B55C0072063E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB3BDEA13D7B55C0072063E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CB3BDEC13D7B55C0072063E /* FBAudioLibTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBAudioLibTester-Prefix.pch"; sourceTree = "<group>"; };
+		4CB3BDED13D7B55C0072063E /* FBAudioLibTesterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBAudioLibTesterAppDelegate.h; sourceTree = "<group>"; };
+		4CB3BDEE13D7B55C0072063E /* FBAudioLibTesterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAudioLibTesterAppDelegate.m; sourceTree = "<group>"; };
+		4CB3BDF113D7B55C0072063E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4CB3BDF313D7B55C0072063E /* FBAudioLibTesterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBAudioLibTesterViewController.h; sourceTree = "<group>"; };
+		4CB3BDF413D7B55C0072063E /* FBAudioLibTesterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAudioLibTesterViewController.m; sourceTree = "<group>"; };
+		4CB3BDF713D7B55C0072063E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FBAudioLibTesterViewController.xib; sourceTree = "<group>"; };
+		4CB3BDFE13D7B55C0072063E /* FBAudioLibTesterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBAudioLibTesterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB3BDFF13D7B55C0072063E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4CB3BE0813D7B55C0072063E /* FBAudioLibTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBAudioLibTesterTests-Info.plist"; sourceTree = "<group>"; };
+		4CB3BE0A13D7B55C0072063E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB3BE0C13D7B55C0072063E /* FBAudioLibTesterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBAudioLibTesterTests.h; sourceTree = "<group>"; };
+		4CB3BE0E13D7B55C0072063E /* FBAudioLibTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAudioLibTesterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CB3BDD713D7B55C0072063E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C10964D13D903C600BED9B6 /* MediaPlayer.framework in Frameworks */,
+				4C10964B13D903BB00BED9B6 /* CoreMedia.framework in Frameworks */,
+				4C10964713D8DD1500BED9B6 /* AudioToolbox.framework in Frameworks */,
+				4C24257913D801E80090C07A /* AVFoundation.framework in Frameworks */,
+				4CB3BDDF13D7B55C0072063E /* UIKit.framework in Frameworks */,
+				4CB3BDE113D7B55C0072063E /* Foundation.framework in Frameworks */,
+				4CB3BDE313D7B55C0072063E /* CoreGraphics.framework in Frameworks */,
+				4C60992313DBECE1008C18B4 /* SoundTouch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB3BDFA13D7B55C0072063E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3BE0013D7B55C0072063E /* SenTestingKit.framework in Frameworks */,
+				4CB3BE0113D7B55C0072063E /* UIKit.framework in Frameworks */,
+				4CB3BE0213D7B55C0072063E /* Foundation.framework in Frameworks */,
+				4CB3BE0313D7B55C0072063E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C24256D13D7F3600090C07A /* FBAudioLib */ = {
+			isa = PBXGroup;
+			children = (
+				4C24257013D7F59D0090C07A /* FBAudioQueuePlayer.h */,
+				4C24257113D7F59D0090C07A /* FBAudioQueuePlayer.m */,
+				4C24257A13D80B750090C07A /* FBAudioLib.h */,
+				4C10964913D8F9F100BED9B6 /* FBDebugSupport.h */,
+				4C686D4A13DB8D5100C565AF /* FBAVAssetPlayer.h */,
+				4C686D4B13DB8D5100C565AF /* FBAVAssetPlayer.m */,
+				4C355CD013DBE3F600715991 /* FBSoundTouchAVAssetPlayer.h */,
+				4C355CD113DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm */,
+			);
+			name = FBAudioLib;
+			sourceTree = "<group>";
+		};
+		4CB3BDCF13D7B55C0072063E = {
+			isa = PBXGroup;
+			children = (
+				4C10964C13D903C600BED9B6 /* MediaPlayer.framework */,
+				4C10964A13D903BB00BED9B6 /* CoreMedia.framework */,
+				4C10964613D8DD1500BED9B6 /* AudioToolbox.framework */,
+				4CB3BDE413D7B55C0072063E /* FBAudioLibTester */,
+				4CB3BE0613D7B55C0072063E /* FBAudioLibTesterTests */,
+				4CB3BDDD13D7B55C0072063E /* Frameworks */,
+				4CB3BDDB13D7B55C0072063E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CB3BDDB13D7B55C0072063E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CB3BDDA13D7B55C0072063E /* FBAudioLibTester.app */,
+				4CB3BDFE13D7B55C0072063E /* FBAudioLibTesterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CB3BDDD13D7B55C0072063E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C60992213DBECE1008C18B4 /* SoundTouch.framework */,
+				4C24257813D801E80090C07A /* AVFoundation.framework */,
+				4CB3BDDE13D7B55C0072063E /* UIKit.framework */,
+				4CB3BDE013D7B55C0072063E /* Foundation.framework */,
+				4CB3BDE213D7B55C0072063E /* CoreGraphics.framework */,
+				4CB3BDFF13D7B55C0072063E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CB3BDE413D7B55C0072063E /* FBAudioLibTester */ = {
+			isa = PBXGroup;
+			children = (
+				4C24256D13D7F3600090C07A /* FBAudioLib */,
+				4CB3BDED13D7B55C0072063E /* FBAudioLibTesterAppDelegate.h */,
+				4CB3BDEE13D7B55C0072063E /* FBAudioLibTesterAppDelegate.m */,
+				4CB3BDF013D7B55C0072063E /* MainWindow.xib */,
+				4CB3BDF313D7B55C0072063E /* FBAudioLibTesterViewController.h */,
+				4CB3BDF413D7B55C0072063E /* FBAudioLibTesterViewController.m */,
+				4CB3BDF613D7B55C0072063E /* FBAudioLibTesterViewController.xib */,
+				4CB3BDE513D7B55C0072063E /* Supporting Files */,
+			);
+			path = FBAudioLibTester;
+			sourceTree = "<group>";
+		};
+		4CB3BDE513D7B55C0072063E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB3BDE613D7B55C0072063E /* FBAudioLibTester-Info.plist */,
+				4CB3BDE713D7B55C0072063E /* InfoPlist.strings */,
+				4CB3BDEA13D7B55C0072063E /* main.m */,
+				4CB3BDEC13D7B55C0072063E /* FBAudioLibTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CB3BE0613D7B55C0072063E /* FBAudioLibTesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CB3BE0C13D7B55C0072063E /* FBAudioLibTesterTests.h */,
+				4CB3BE0E13D7B55C0072063E /* FBAudioLibTesterTests.m */,
+				4CB3BE0713D7B55C0072063E /* Supporting Files */,
+			);
+			path = FBAudioLibTesterTests;
+			sourceTree = "<group>";
+		};
+		4CB3BE0713D7B55C0072063E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB3BE0813D7B55C0072063E /* FBAudioLibTesterTests-Info.plist */,
+				4CB3BE0913D7B55C0072063E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CB3BDD913D7B55C0072063E /* FBAudioLibTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB3BE1213D7B55C0072063E /* Build configuration list for PBXNativeTarget "FBAudioLibTester" */;
+			buildPhases = (
+				4CB3BDD613D7B55C0072063E /* Sources */,
+				4CB3BDD713D7B55C0072063E /* Frameworks */,
+				4CB3BDD813D7B55C0072063E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBAudioLibTester;
+			productName = FBAudioLibTester;
+			productReference = 4CB3BDDA13D7B55C0072063E /* FBAudioLibTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CB3BDFD13D7B55C0072063E /* FBAudioLibTesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB3BE1513D7B55C0072063E /* Build configuration list for PBXNativeTarget "FBAudioLibTesterTests" */;
+			buildPhases = (
+				4CB3BDF913D7B55C0072063E /* Sources */,
+				4CB3BDFA13D7B55C0072063E /* Frameworks */,
+				4CB3BDFB13D7B55C0072063E /* Resources */,
+				4CB3BDFC13D7B55C0072063E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CB3BE0513D7B55C0072063E /* PBXTargetDependency */,
+			);
+			name = FBAudioLibTesterTests;
+			productName = FBAudioLibTesterTests;
+			productReference = 4CB3BDFE13D7B55C0072063E /* FBAudioLibTesterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CB3BDD113D7B55C0072063E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Five Bats Incorporated";
+			};
+			buildConfigurationList = 4CB3BDD413D7B55C0072063E /* Build configuration list for PBXProject "FBAudioLibTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CB3BDCF13D7B55C0072063E;
+			productRefGroup = 4CB3BDDB13D7B55C0072063E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CB3BDD913D7B55C0072063E /* FBAudioLibTester */,
+				4CB3BDFD13D7B55C0072063E /* FBAudioLibTesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CB3BDD813D7B55C0072063E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3BDE913D7B55C0072063E /* InfoPlist.strings in Resources */,
+				4CB3BDF213D7B55C0072063E /* MainWindow.xib in Resources */,
+				4CB3BDF813D7B55C0072063E /* FBAudioLibTesterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB3BDFB13D7B55C0072063E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3BE0B13D7B55C0072063E /* InfoPlist.strings in Resources */,
+				4CB3BE0D13D7B55C0072063E /* FBAudioLibTesterTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CB3BDFC13D7B55C0072063E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CB3BDD613D7B55C0072063E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3BDEB13D7B55C0072063E /* main.m in Sources */,
+				4CB3BDEF13D7B55C0072063E /* FBAudioLibTesterAppDelegate.m in Sources */,
+				4CB3BDF513D7B55C0072063E /* FBAudioLibTesterViewController.m in Sources */,
+				4C24257213D7F59D0090C07A /* FBAudioQueuePlayer.m in Sources */,
+				4C686D4C13DB8D5100C565AF /* FBAVAssetPlayer.m in Sources */,
+				4C355CD213DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB3BDF913D7B55C0072063E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3BE0F13D7B55C0072063E /* FBAudioLibTesterTests.m in Sources */,
+				4C24257313D7F59D0090C07A /* FBAudioQueuePlayer.m in Sources */,
+				4C686D4D13DB8D5100C565AF /* FBAVAssetPlayer.m in Sources */,
+				4C355CD313DBE3F600715991 /* FBSoundTouchAVAssetPlayer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CB3BE0513D7B55C0072063E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CB3BDD913D7B55C0072063E /* FBAudioLibTester */;
+			targetProxy = 4CB3BE0413D7B55C0072063E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CB3BDE713D7B55C0072063E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB3BDE813D7B55C0072063E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CB3BDF013D7B55C0072063E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB3BDF113D7B55C0072063E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4CB3BDF613D7B55C0072063E /* FBAudioLibTesterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB3BDF713D7B55C0072063E /* en */,
+			);
+			name = FBAudioLibTesterViewController.xib;
+			sourceTree = "<group>";
+		};
+		4CB3BE0913D7B55C0072063E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB3BE0A13D7B55C0072063E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CB3BE1013D7B55C0072063E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CB3BE1113D7B55C0072063E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CB3BE1313D7B55C0072063E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Aural\"",
+					"\"$(SRCROOT)/../FBAudioLib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBAudioLibTester/FBAudioLibTester-Prefix.pch";
+				HEADER_SEARCH_PATHS = FBAudioLib;
+				INFOPLIST_FILE = "FBAudioLibTester/FBAudioLibTester-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CB3BE1413D7B55C0072063E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Aural\"",
+					"\"$(SRCROOT)/../FBAudioLib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBAudioLibTester/FBAudioLibTester-Prefix.pch";
+				HEADER_SEARCH_PATHS = FBAudioLib;
+				INFOPLIST_FILE = "FBAudioLibTester/FBAudioLibTester-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CB3BE1613D7B55C0072063E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBAudioLibTester.app/FBAudioLibTester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBAudioLibTester/FBAudioLibTester-Prefix.pch";
+				INFOPLIST_FILE = "FBAudioLibTesterTests/FBAudioLibTesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4CB3BE1713D7B55C0072063E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBAudioLibTester.app/FBAudioLibTester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBAudioLibTester/FBAudioLibTester-Prefix.pch";
+				INFOPLIST_FILE = "FBAudioLibTesterTests/FBAudioLibTesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CB3BDD413D7B55C0072063E /* Build configuration list for PBXProject "FBAudioLibTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB3BE1013D7B55C0072063E /* Debug */,
+				4CB3BE1113D7B55C0072063E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CB3BE1213D7B55C0072063E /* Build configuration list for PBXNativeTarget "FBAudioLibTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB3BE1313D7B55C0072063E /* Debug */,
+				4CB3BE1413D7B55C0072063E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CB3BE1513D7B55C0072063E /* Build configuration list for PBXNativeTarget "FBAudioLibTesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB3BE1613D7B55C0072063E /* Debug */,
+				4CB3BE1713D7B55C0072063E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CB3BDD113D7B55C0072063E /* Project object */;
+}
