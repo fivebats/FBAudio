@@ -25,6 +25,8 @@ There are a few different players. From lowest to highest level they are:
 
 **FBAudioLibTester** is a program that shows how to use FBSoundTouchAVAssetPlayer. It prompts the user to select a song from the iTunes library on their device and plays it. A tempo slider permits changes to the playing audio tempo.
 
+**Please note that the test app cannot be run in the simulator because the simulator runtime does not have some of the required libraries.**
+
 ## How to Use
 
 Copy the contents of the FBAudioLib folder into your project.

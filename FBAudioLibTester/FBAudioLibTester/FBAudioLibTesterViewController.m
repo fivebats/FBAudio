@@ -17,6 +17,11 @@
 //
 // Attribution is not required, but appreciated :)
 //
+#import <TargetConditionals.h>
+
+#if TARGET_IPHONE_SIMULATOR
+#error This code cannot be tested on the simulator
+#endif
 
 #import "FBAudioLibTesterViewController.h"
 #import "FBAudioLib.h"
