@@ -48,5 +48,10 @@
 {
     float tempo;
 }
-@property (nonatomic, assign) float tempo;
+@property (nonatomic, assign) float tempo;  // tempo delta in percents: -95.0..+5000.0
+/* 
+ from superclass:
+ -(void)playFromAssetURL:(NSURL*)assetURL;
+ -(void)stop;
+ */
 @end

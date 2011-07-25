@@ -104,6 +104,7 @@
 	[assetReader startReading];
     
     self.audioPlayer = [[[FBAudioQueuePlayer alloc] init] autorelease];
+    audioPlayer.delegate = self;
     audioPlayer.addSampleCallback = ^(FBAudioQueuePlayer *player, AudioQueueBufferRef inBuffer)
     {
         OSStatus err;

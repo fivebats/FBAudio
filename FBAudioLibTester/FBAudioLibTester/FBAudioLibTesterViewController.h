@@ -21,12 +21,11 @@
 #import <UIKit/UIKit.h>
 #import "FBAudioLib.h"
 
-@interface FBAudioLibTesterViewController : UIViewController <MPMediaPickerControllerDelegate>
+@interface FBAudioLibTesterViewController : UIViewController <MPMediaPickerControllerDelegate, FBAVAssetPlayerDelegate>
 {
     MPMediaItem *song;
 	UILabel *songLabel;
 	UILabel *artistLabel;
-	UILabel *sizeLabel;
 	UIImageView *coverArtView;
     UISlider *songRateSlider;
     UILabel *speedLabel;
@@ -35,7 +34,6 @@
 @property (nonatomic, retain) MPMediaItem *song;
 @property (nonatomic, assign) IBOutlet UILabel *songLabel;
 @property (nonatomic, assign) IBOutlet UILabel *artistLabel;
-@property (nonatomic, assign) IBOutlet UILabel *sizeLabel;
 @property (nonatomic, assign) IBOutlet UIImageView *coverArtView;
 @property (nonatomic, assign) IBOutlet UISlider *songRateSlider;
 @property (nonatomic, retain) IBOutlet UILabel *speedLabel;

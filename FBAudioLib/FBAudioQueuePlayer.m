@@ -79,7 +79,7 @@ static void HandleOutputBuffer( void *inData, AudioQueueRef inAQ, AudioQueueBuff
     } 
     else 
     {
-        NSLog(@"%s: stopping audio queue", __func__ );
+        DLog(@"%s: stopping audio queue", __func__ );
         err = AudioQueueStop( player->audioQueue, NO );
     }
 }

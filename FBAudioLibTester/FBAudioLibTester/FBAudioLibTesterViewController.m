@@ -32,7 +32,6 @@
 @synthesize song;
 @synthesize songLabel;
 @synthesize artistLabel;
-@synthesize sizeLabel;
 @synthesize coverArtView;
 @synthesize songRateSlider;
 @synthesize speedLabel;
@@ -53,8 +52,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    LOGFUNC_ENTRY;
     self.audioPlayer = [[[FBSoundTouchAVAssetPlayer alloc] init] autorelease];
+    audioPlayer.delegate = self;
     stopPlayingButton.enabled = NO;
+    self.songLabel.text = @"";
+    self.artistLabel.text = @"";
+    self.coverArtView.hidden = YES;
     [super viewDidLoad];
 }
 
@@ -70,7 +74,6 @@
     LOGFUNC_ENTRY;
     self.songLabel = nil;
     self.artistLabel = nil;
-    self.sizeLabel = nil;
     self.coverArtView = nil;
     self.songRateSlider = nil;
     self.speedLabel = nil;
@@ -92,7 +95,6 @@
     [song release], song = nil;
     [songLabel release], songLabel = nil;
     [artistLabel release], artistLabel = nil;
-    [sizeLabel release], sizeLabel = nil;
     [coverArtView release], coverArtView = nil;
     [songRateSlider release], songRateSlider = nil;
     [speedLabel release], speedLabel = nil;
@@ -157,6 +159,7 @@
 	artistLabel.text = [song valueForProperty:MPMediaItemPropertyArtist];
 	coverArtView.image = [[song valueForProperty:MPMediaItemPropertyArtwork]
 						  imageWithSize: coverArtView.bounds.size];
+    coverArtView.hidden = NO;
     stopPlayingButton.enabled = YES;
     [self playSong];
 }
@@ -167,5 +170,21 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark FBAVAssetPlayerDelegate
+
+-(void) audioAssetPlayerDidStartPlayback:(FBAVAssetPlayer*)player
+{
+    LOGFUNC_ENTRY;
+}
+
+-(void) audioAssetPlayerDidStopPlayback:(FBAVAssetPlayer*)player
+{
+    LOGFUNC_ENTRY;
+    dispatch_async( dispatch_get_main_queue(), ^{
+        self.songLabel.text = @"";
+        self.artistLabel.text = @"";
+        self.coverArtView.hidden = YES;
+    });
+}
 
 @end
